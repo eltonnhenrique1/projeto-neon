@@ -1,0 +1,47 @@
+.btn-primary {
+  width: 23.4rem;
+  height: 4.8rem;
+  background-color: $brand-yellow;
+  transition: background-color 0.3s;
+
+  color: #855b35;
+  &:hover {
+    background-color: #ffdc5c;
+  }
+}
+
+.btn-secondary {
+  width: 21.7rem;
+  height: 4.1rem;
+  background-color: transparent;
+  border: 1px solid $brand-light-blue;
+  transition: all 0.3s;
+  color: $brand-light-blue;
+  &:hover {
+    background-color: $brand-light-blue;
+    color: white;
+  }
+  &.whitee{
+
+    border: 1px solid white;
+    color: white;
+    &:hover{
+        background-color:white ;
+        color: #01C7DF ;
+    }
+
+
+
+  }
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 100%;
+  border-radius: 12.2rem;
+  
+}

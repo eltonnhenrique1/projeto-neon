@@ -1,0 +1,465 @@
+.s-hero {
+  height: 78.6rem;
+  width: 100%;
+  background: url("../img/bg-hero.svg") no-repeat center center;
+
+  .container {
+    padding-top: 18.3rem;
+    @include flex(row, flex-start, space-between);
+
+    .texto {
+      h3 {
+        margin-bottom: 3.2rem;
+        color: #ffffff;
+      }
+      h1 {
+        width: 68.3rem;
+        height: 21.6rem;
+        margin-bottom: 3.9rem;
+        color: #ffffff;
+      }
+      .btn-primary {
+        margin-bottom: 6.4rem;
+      }
+
+      ul {
+        display: flex;
+        width: 100%;
+        max-width: 62.1rem;
+        align-items: center;
+        justify-content: space-between;
+
+        li {
+          display: flex;
+          align-items: center;
+
+          .icon {
+            background: linear-gradient(
+              180deg,
+              #35cae2 0%,
+              rgba(53, 202, 226, 0) 100%
+            );
+            width: 4.8rem;
+            height: 4.8rem;
+            border-radius: 50%;
+            @include flex(flex, center, center);
+          }
+          span {
+            margin-left: 1.2rem;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .area-image {
+      width: 100%;
+      max-width: 70.6rem;
+      margin-right: -17.4rem;
+      h2 {
+        text-align: center;
+        font-weight: 600;
+        font-size: 5.6rem;
+        line-height: 8.4rem;
+        letter-spacing: -2px;
+        color: rgba(255, 255, 255, 0.4);
+        margin-bottom: 6.7rem;
+      }
+      .image {
+        width: 100%;
+        height: 54.1rem;
+        position: relative;
+
+        img {
+          position: absolute;
+        }
+
+        .front {
+          top: 4.1rem;
+          left: 0;
+          z-index: 2;
+        }
+        .back {
+          bottom: 4.6rem;
+          right: 8.6rem;
+          z-index: 1;
+        }
+        .circle {
+          top: 2.8rem;
+          right: 4.3rem;
+        }
+      }
+    }
+  }
+}
+
+.s-tell {
+  padding-top: 12.9rem;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    .s-left {
+      width: 100%;
+      max-width: 27.7rem;
+      margin-right: 14rem;
+
+      .cell {
+        position: relative;
+        margin-bottom: 13rem;
+
+        .mockupp {
+          width: 100%;
+          max-width: 27.7rem;
+        }
+        .circle-blue {
+          position: absolute;
+          top: 8.7rem;
+          max-width: 37.7rem;
+          z-index: -1;
+          left: -21.4rem;
+        }
+      }
+
+      .texto-app {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        .icone {
+          margin-bottom: 3.1rem;
+          &:before {
+            content: "";
+            width: 0.5rem;
+            height: 8.3rem;
+            background: url(../img/points.svg);
+            position: absolute;
+            top: -10.4rem;
+            left: 50%;
+            margin-left: -0.25rem;
+          }
+        }
+
+        h3 {
+          font-weight: 500;
+          font-size: 2.4rem;
+          line-height: 150%;
+          text-align: center;
+          letter-spacing: -0.5px;
+          color: #33303e;
+        }
+        p {
+          max-width: 100%;
+          width: 27rem;
+          height: 7.2rem;
+          font-weight: 400;
+          font-size: 1.6rem;
+          line-height: 150%;
+          text-align: center;
+          color: #5f5c6b;
+          margin-bottom: 2.6rem;
+        }
+        .apple {
+          margin-bottom: 1.4rem;
+        }
+      }
+    }
+
+    .s-right {
+      position: relative;
+      .titulo {
+        padding-top: 2.7rem;
+        margin-bottom: 4.9rem;
+        h2 {
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 112%;
+          letter-spacing: -1px;
+          color: $gray-600;
+          width: 48.8rem;
+          height: 9rem;
+        }
+      }
+      .cartao-credito {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 4.9rem;
+        .texto-cartao {
+          margin-left: 4.3rem;
+          h3 {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 150%;
+            letter-spacing: -0.5px;
+            color: $gray-400;
+          }
+          p {
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 150%;
+            color: $gray-300;
+            width: 59.3rem;
+          }
+        }
+      }
+      .sem-taxa {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 4.9rem;
+        .texto-taxa {
+          margin-left: 4.3rem;
+          h3 {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 150%;
+            letter-spacing: -0.5px;
+            color: $gray-400;
+          }
+          p {
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 150%;
+            color: $gray-300;
+            width: 59.3rem;
+          }
+        }
+      }
+      .investimento {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 6.6rem;
+      }
+
+      .texto-investimento {
+        margin-left: 4.3rem;
+        h3 {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 150%;
+          letter-spacing: -0.5px;
+          color: $gray-400;
+        }
+        p {
+          font-weight: 400;
+          font-size: 1.8rem;
+          line-height: 150%;
+          color: $gray-300;
+        }
+      }
+      .conheça {
+        margin-bottom: 14.2rem;
+        a {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 112%;
+          letter-spacing: -0.5px;
+          color: $brand-blue;
+          position: relative;
+
+          &:before {
+            content: "";
+            width: 80rem;
+            height: 0.1rem;
+            background-color: rgba(198, 197, 206, 0.377);
+            position: absolute;
+            top: -3.2rem;
+          }
+        }
+      }
+      .card-pj {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        width: 80rem;
+
+        height: 41rem;
+        background: linear-gradient(100.52deg, #00a5f0 5.63%, #03e7e7 95.75%);
+        border-radius: 1.2rem;
+
+        .texto-pj {
+          width: 38rem;
+          margin-left: 5.9rem;
+          padding-top: 6.7rem;
+          h1 {
+            font-weight: 600;
+            font-size: 4rem;
+            line-height: 60px;
+            letter-spacing: -2px;
+            color: #ffffff;
+
+            padding-bottom: 0.7rem;
+          }
+          h2 {
+            font-weight: 600;
+            font-size: 2.8rem;
+            line-height: 120%;
+            letter-spacing: -1px;
+            color: #ffffff;
+            padding-bottom: 1.1rem;
+            width: 38rem;
+            height: 6.8rem;
+          }
+          p {
+            font-weight: 400;
+            font-size: 1.7rem;
+            line-height: 140%;
+            color: #ffffff;
+            padding-bottom: 3.3rem;
+          }
+          .btn-pj {
+            .btn-primary {
+              width: 13.2rem;
+              height: 4.8rem;
+
+              &:not(:first-child) {
+                margin-left: 1.6rem;
+              }
+            }
+          }
+        }
+        .cartao-pj {
+          position: absolute;
+          right: -3rem;
+          top: 10rem;
+          z-index: 1;
+          .cartao-front-pj {
+            z-index: 2;
+          }
+          .circulo-card-pj {
+            position: absolute;
+            top: 10rem;
+            left: -2.7rem;
+            z-index: -1;
+          }
+          .meia-pj {
+            position: absolute;
+            bottom: 12rem;
+            right: -6rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.depoimentos {
+  .container {
+    .card-tt {
+      .titulos {
+        padding-top: 13.4rem;
+        h2 {
+          font-weight: 700;
+          font-size: 4rem;
+          line-height: 112%;
+          letter-spacing: -1px;
+          color: $gray-200;
+          padding-bottom: 1.4rem;
+        }
+        h1 {
+          font-weight: 700;
+          font-size: 4rem;
+          line-height: 112%;
+          letter-spacing: -1px;
+          color: $gray-600;
+          padding-bottom: 4rem;
+        }
+      }
+      .cardss {
+        @include flex(row, center, space-between);
+      }
+    }
+    .mockup2 {
+      .conta-digital {
+        .titulo {
+          padding-top: 13.4rem;
+          padding-bottom: 4.5rem;
+          h2 {
+            font-weight: 600;
+            font-size: 4rem;
+            line-height: 112%;
+            letter-spacing: -1px;
+            color: $gray-200;
+            opacity: 0.8;
+            padding-bottom: 0.9rem;
+          }
+          h1 {
+            font-weight: 700;
+            font-size: 4rem;
+            line-height: 112%;
+            letter-spacing: -1px;
+            color: $gray-600;
+            height: 9rem;
+            width: 54.2rem;
+          }
+        }
+        .cartao-visa {
+          display: flex;
+          padding-bottom: 3.4rem;
+          .texto-visa {
+            padding-left: 2.6rem;
+            h3 {
+              font-weight: 500;
+              font-size: 2rem;
+              line-height: 112%;
+              letter-spacing: -0.5px;
+              color: $gray-400;
+            }
+            p {
+              font-weight: 400;
+              font-size: 1.8rem;
+              line-height: 150%;
+              color: $gray-300;
+            }
+          }
+        }
+        .zero-mensalidade {
+          display: flex;
+          padding-bottom: 3.4rem;
+          .texto-zero {
+            padding-left: 2.6rem;
+            h3 {
+              font-weight: 500;
+              font-size: 2rem;
+              line-height: 112%;
+              letter-spacing: -0.5px;
+              color: $gray-400;
+            }
+            p {
+              font-weight: 400;
+              font-size: 1.8rem;
+              line-height: 150%;
+              color: $gray-300;
+            }
+          }
+        }
+        .investimento-que {
+          display: flex;
+          padding-bottom: 6.1rem;
+          .texto-investimento-que {
+            padding-left: 2.6rem;
+            h3 {
+              font-weight: 500;
+              font-size: 2rem;
+              line-height: 112%;
+              letter-spacing: -0.5px;
+              color: $gray-400;
+            }
+            p {
+              font-weight: 400;
+              font-size: 1.8rem;
+              line-height: 150%;
+              color: $gray-300;
+            }
+          }
+        }
+      }
+    }
+  }
+}
