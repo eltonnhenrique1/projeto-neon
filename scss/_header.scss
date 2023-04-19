@@ -35,6 +35,52 @@ header {
           }
         }
       }
+      .btn-mobile {
+        display: none;
+      }
+    }
+  }
+
+  @include responsive(1080px) {
+    .container {
+      nav {
+        ul {
+          margin-right: 5rem;
+          li {
+            &:not(:first-child) {
+              margin-left: 2.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(991px) {
+    .logoo{
+      max-width: 10.8rem;
+    }
+    .container {
+      nav {
+        ul {
+          display: none;
+        }
+        .btn-mobile {
+          display: block;
+          margin-left: 2.5rem;
+        }
+      }
+    }
+  }
+
+  @include responsive(480px) {
+    height: 7.3rem;
+    .container {
+      nav {
+        .btn-secondary {
+          display: none;
+        }
+      }
     }
   }
 }

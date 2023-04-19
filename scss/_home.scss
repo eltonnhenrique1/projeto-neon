@@ -1,10 +1,10 @@
 .s-hero {
-  height: 78.6rem;
   width: 100%;
   background: url("../img/bg-hero.svg") no-repeat center center;
 
   .container {
     padding-top: 18.3rem;
+    height: 78.6rem;
     @include flex(row, flex-start, space-between);
 
     .texto {
@@ -79,18 +79,94 @@
         }
 
         .front {
+          max-width: 43.8rem;
           top: 4.1rem;
           left: 0;
           z-index: 2;
         }
         .back {
+          max-width: 35.2rem;
           bottom: 4.6rem;
           right: 8.6rem;
           z-index: 1;
         }
         .circle {
+          max-width: 55.3rem;
           top: 2.8rem;
           right: 4.3rem;
+        }
+      }
+    }
+    @include responsive(1440px) {
+      .area-image {
+        margin-right: -13.4rem;
+      }
+    }
+    @include responsive(1366px) {
+      .area-image {
+        margin-right: -8rem;
+        .image {
+          .front {
+            left: -2.7rem;
+          }
+        }
+      }
+    }
+    @include responsive(1050px) {
+      padding-top: 13.3rem;
+      height: 63.6rem;
+
+      .texto {
+        .btn-primary {
+          margin-bottom: 4.4rem;
+        }
+      }
+      .area-image {
+        h2 {
+          font-size: 4.6rem;
+        }
+        .image {
+          height: 43.1rem;
+          .front {
+            max-width: 35.8rem;
+            top: 2.1rem;
+            left: 1rem;
+          }
+          .back {
+            max-width: 27.2rem;
+            bottom: 5.6rem;
+          }
+          .circle {
+            top: -3.2rem;
+            right: 7.3rem;
+            max-width: 46.3rem;
+          }
+        }
+      }
+      .texto {
+        h1 {
+          max-width: 57.3rem;
+          margin-bottom: 1.9rem;
+        }
+      }
+    }
+    @include responsive(991px) {
+      height: 89.1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .texto {
+        margin-bottom: 5rem;
+        text-align: center;
+        max-width: 100%;
+
+
+        h3 {
+          text-align: center;
+        }
+        h1 {
+          text-align: center;
+          
         }
       }
     }
@@ -351,6 +427,8 @@
 
 .depoimentos {
   .container {
+    position: relative;
+
     .card-tt {
       .titulos {
         padding-top: 13.4rem;
@@ -376,7 +454,11 @@
       }
     }
     .mockup2 {
+      display: flex;
+      margin-bottom: 15.4rem;
+
       .conta-digital {
+        margin-right: 13.9rem;
         .titulo {
           padding-top: 13.4rem;
           padding-bottom: 4.5rem;
@@ -460,13 +542,32 @@
           }
         }
       }
-      
+      .telefone-1 {
+        padding-top: 13rem;
+        .telefone-01 {
+          position: absolute;
+          bottom: -48px;
+        }
+        .telefone-02 {
+          position: absolute;
+          right: 5.9rem;
+        }
+        .circulo-telefone {
+          position: absolute;
+          right: -15.1rem;
+          bottom: -7.3rem;
+        }
+      }
     }
   }
+}
 
-  footer {
-    background: $brand-blue;
-    .container {
+footer {
+  background-color: #0073ce;
+
+  .container {
+    .top {
+      padding-top: 4.9rem;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -493,6 +594,7 @@
         }
       }
     }
+
     .infos {
       display: flex;
       flex-direction: flex-start;
@@ -551,10 +653,11 @@
       }
       .imprensa {
         width: 28rem;
-        display: flex;
         height: 7.6rem;
         background-color: rgba(0, 164, 240, 0.23);
+        display: flex;
         padding: 1.7rem 1.5rem 1.7rem 2.5rem;
+        margin-bottom: 2.4rem;
         span {
           font-weight: 700;
           font-size: 14px;
@@ -570,18 +673,21 @@
     }
     .final {
       display: flex;
-      flex-direction: row;
-      h1 {
+      padding-bottom: 3.4rem;
+      border-bottom: $brand-yellow solid 4px;
+
+      p {
+        max-width: 2.5rem;
         width: 100%;
-        max-width: 1.8rem;
-        height: 1.8rem;
+        height: 2.5rem;
+        display: flex;
         margin-right: 2.5rem;
       }
       span {
         width: 66rem;
         height: 4.2rem;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 1.4rem;
         line-height: 150%;
         color: #ffffff;
         opacity: 0.8;

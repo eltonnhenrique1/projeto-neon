@@ -6,7 +6,7 @@
 }
 
 @mixin responsive($screenwidth){
-    @media(max-width: $screenwidth){
+    @media(max-width:$screenwidth){
         @content;
         
     }
